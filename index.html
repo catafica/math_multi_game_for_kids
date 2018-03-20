@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>math_game_multiplication</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <style media="screen">
+    body {
+      background-image: url(./subtle_dots.png);
+    }
+
+    .col.s12:hover {
+      background-color: #bbdefb;
+    }
+
+    .center#box1 {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+    .center#box2 {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+    .center#box3 {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+    .center#box4 {
+      font-weight: bolder;
+      font-size: 24px;
+    }
+  </style>
+  <div class="container">
+    <h2 class="center-align grey-text <text-darken-3></text-darken-3>" id="heading_title">mathematics multiplication game -ES5, materialize css</h2>
+<div class="center-align">
+  <span class="flow-text">Leave one second between clicks.</span>
+
+</div>
+    <!-- score -->
+
+    <div class="container">
+      <button type="button" id="gameover" class="btn red hide" style="width:100%;">game over</button>
+
+    </div>
+
+    <ul class="collection">
+      <li class="collection-item grey-text text-darken-2 center-align transparent" style="font-weight: bolder; font-size: 20px;">
+        Score:<span id="score" class="black-text"></span></li>
+
+      <li class="collection-item grey-text text-darken-2 center-align transparent" style="font-weight: bolder; font-size: 20px;">
+        Correct:<span id="correct" class="green-text"></span></li>
+
+      <li class="collection-item grey-text text-darken-2 center-align transparent" style="font-weight: bolder; font-size: 20px;">
+        Wrong:<span id="wrong" class="red-text"></span></li>
+
+      <li class="collection-item grey-text text-darken-2 center-align transparent" style="font-weight: bolder; font-size: 20px;">
+        Question:<span class="blue-text" id="question"></span></li>
+    </ul>
+  </div>
+
+  <div class="clearfix" style="height: 2em;"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 l3 z-depth-1" style="height: 6em;">
+        <p id="box1" class="center"></p>
+      </div>
+      <div class="col s12 m6 l3 z-depth-1" style="height: 6em;">
+        <p id="box2" class="center"></p>
+      </div>
+      <div class="col s12 m6 l3 z-depth-1" style="height: 6em;">
+        <p id="box3" class="center"></p>
+      </div>
+      <div class="col s12 m6 l3 z-depth-1" style="height: 6em;">
+        <p id="box4" class="center"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="center-align">
+      <div class="btn blue waves-effect waves-light" id="startreset">
+        Start
+      </div>
+      <div class="btn green waves-effect waves-light" id="timeremaining" style="margin-left: 8em;">
+        Time remaining: <span id="timeremainingvalue"></span>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix" style="height:2em; width: 100%;">
+
+  </div>
+
+  <script type="text/javascript">
+    var heading_title = document.getElementById('heading_title');
+    heading_title.innerHTML = heading_title.innerHTML.toUpperCase();
+  </script>
+  <script src="./logic.js" charset="utf-8"></script>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+
+</html>
